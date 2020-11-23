@@ -1,3 +1,12 @@
+@media screen and (max-width: 750px){
+    .menu{
+        width: 100vw !important;
+    }
+    .login-wrapper{
+        display: none !important;
+    }
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -38,21 +47,21 @@ body {
 }
 
 .menu ul {
-    padding: 30px;
-    margin: 10px;
+    padding: 15px;
+    margin: 10px 0 0 0;
     width: 80%;
-    border-radius: 50px;
+    border-radius: 0px 50px 50px 0px;
     border-right: #FB5607 10px solid;
     background: #8338EC;
     box-shadow: 0px 3px 10px black;
-    font-size: 2rem;
+    font-size: calc(15px);
     color: white;
     transition: 0.3s ease;
 }
 
 .menu ul:hover{
     color: #FB5607;
-    font-size: 2.5rem;
+    font-size: 2em;
 }
 
 .hero{
@@ -113,7 +122,7 @@ color: #FB5607;
     top: 32vw;
     height: 2.5vw;
     width: 27vw;
-    z-index: 9;
+    z-index: 2;
 }
 
 .city-search-wrapper > input {
