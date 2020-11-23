@@ -69,7 +69,6 @@ body {
     height: 100vw;
     transform: translate(-30vw, -50vw);
     border-radius: 50%;
-    /*background: #8338EC;*/
     background: linear-gradient(320deg, #8338EC 30%, #7918F2 40%, #4801FF 50%);
     box-shadow: 8px 8px 50px #000000;
 }
@@ -276,6 +275,13 @@ input:focus{
 
 #city {
     transform: translateY(-220%);
+}
+
+#city > input {
+    width: 90%;
+    height: 30px;
+    display:  none;
+    transition: 0.5s ease;
 }
 
 #sort{

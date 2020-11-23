@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap" rel="stylesheet">
-    <script type="module" src="main.js"></script>
-    <script type="text/javascript" src="index_func.js"></script>
+    <script type="module" src="Js/main.js"></script>
+    <script type="text/javascript" src="Js/index_func.js"></script>
     <title>Głodny ?</title>
 </head>
 <body>
@@ -32,7 +32,7 @@
 
             <div class="city-search-wrapper">
                 <img src="img/buildings.svg">                  
-                <input type="city-search" name="search-city" class="search-city" placeholder="Wyszukaj miasto">                    
+                <input type="search" name="search-city" class="search-city" placeholder="Wyszukaj miasto">                    
             </div>
 
             <div class="circle-medium"></div>
@@ -77,16 +77,19 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex, similique rerum reiciendis laboriosam mollitia adipisci sit est ullam aut aperiam excepturi dolor. Accusantium unde aperiam pariatur, nostrum sed hic.</p>
         </div>
 
-        <div id="city" class="right-bar">
-            <img src="img/buildings.svg" alt="city img">
+        <div onclick="cityReveal()" id="city" class="right-bar">
+            <img class="city-img" src="img/buildings.svg" alt="city img">
+            <input type="text" name="city-search2" id="city-search2">
         </div>
 
-        <div id="category"class="right-bar">
-            <img src="img/list.png" alt="category img">
+        <div onclick="categoryReveal()" id="category"class="right-bar">
+            <img class="category-img" src="img/list.svg" alt="cat img">
+            
         </div>
 
-        <div id="sort"class="right-bar">
-            <img src="img/sort.png" alt="sort img">
+        <div onclick="sortReveal()" id="sort"class="right-bar">
+            <img class="sort-img" src="img/sort.svg" alt="sort img">
+
         </div>
 
     </div> 
