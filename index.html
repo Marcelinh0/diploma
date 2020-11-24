@@ -32,7 +32,7 @@
 
             <div class="city-search-wrapper">
                 <img src="img/buildings.svg">                  
-                <input type="search" name="search-city" class="search-city" placeholder="Wyszukaj miasto">                    
+                <input type="text" name="search-city" class="search-city" placeholder="Wyszukaj miasto">                    
             </div>
 
             <div class="circle-medium"></div>
@@ -77,19 +77,29 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex, similique rerum reiciendis laboriosam mollitia adipisci sit est ullam aut aperiam excepturi dolor. Accusantium unde aperiam pariatur, nostrum sed hic.</p>
         </div>
 
-        <div onclick="cityReveal()" id="city" class="right-bar">
-            <img class="city-img" src="img/buildings.svg" alt="city img">
-            <input type="text" name="city-search2" id="city-search2">
+        <div id="search-name" class="right-bar">
+            <img class="search-name-img" onclick= "searchNameReveal()" src="img/loupe.svg" alt="city img">
+            <input type="text" name="name-input" id="search-name-input">
         </div>
 
-        <div onclick="categoryReveal()" id="category"class="right-bar">
-            <img class="category-img" src="img/list.svg" alt="cat img">
-            
+        <div id="category"class="right-bar">
+            <img class="category-img" onclick="categoryReveal()" src="img/list.svg" alt="cat img">
+            <select name="category" id="category-select">
+                <option value="1">opcja1</option>
+                <option value="2">opcja2</option>
+                <option value="2">opcja3</option>
+                <option value="3">opcja4</option>
+              </select>
         </div>
 
-        <div onclick="sortReveal()" id="sort"class="right-bar">
-            <img class="sort-img" src="img/sort.svg" alt="sort img">
-
+        <div  id="sort"class="right-bar">
+            <img class="sort-img" onclick="sortReveal()" src="img/sort.svg" alt="sort img">
+            <select name="sort" id="sort-select">
+                <option value="1">opcja1</option>
+                <option value="2">opcja2</option>
+                <option value="2">opcja3</option>
+                <option value="3">opcja4</option>
+              </select>
         </div>
 
     </div> 

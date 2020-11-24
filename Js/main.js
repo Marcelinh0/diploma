@@ -15,7 +15,7 @@ let tl = gsap.timeline({
     }
 });
 
-tl.from(".right-bar", {x: 20, opacity: 0},{})
+tl.from(".right-bar", {x: 400, opacity: 0},{})
   .from(".main-element", {x: -100, opacity: 0},{});
 
 let t2 = gsap.timeline({
@@ -34,16 +34,16 @@ function rightBarStay() {
 
   $(window).scroll(function (event) { 
     var mainSection = $('#main-section').offset().top
-    var city = $('#city').offset().top
+    var searchName = $('#search-name').offset().top
     var screenBottom = (window.scrollY + window.innerHeight)
 
-   if(screenBottom - mainSection -250 <= mainSection - city){
-    document.getElementById("city").style = "position: absolute; bottom: unset; top: 1vw; right: 2vw; transform: translateY(0%)";
-    document.getElementById("sort").style = "position: absolute; bottom: unset; top: 1vw; right: 2vw; transform: translateY(120%)";
-    document.getElementById("category").style = "position: absolute; bottom: unset; top: 1vw; right: 2vw; transform: translateY(240%)";
+   if(screenBottom - mainSection -250 <= mainSection - searchName){
+    document.getElementById("search-name").style = "position: absolute; bottom: unset; top: 1vw; right: 0px; transform: translate(25vw,0%)";
+    document.getElementById("sort").style = "position: absolute; bottom: unset; top: 1vw; right: 0px; transform: translate(25vw,120%)";
+    document.getElementById("category").style = "position: absolute; bottom: unset; top: 1vw; right: 0px; transform: translate(25vw,240%)";
     }
-    else if (screenBottom - mainSection > city - mainSection + 250){
-    document.getElementById("city").removeAttribute("style");
+    else if (screenBottom - mainSection > searchName - mainSection + 50){
+    document.getElementById("search-name").removeAttribute("style");
     document.getElementById("sort").removeAttribute("style");
     document.getElementById("category").removeAttribute("style"); 
     }

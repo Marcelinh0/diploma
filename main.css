@@ -267,36 +267,51 @@ input:focus{
     background: linear-gradient(130deg, #8338EC 50%, #7918F2 48%, #4801FF 100%);
     box-shadow: -2px 3px 3px black;
     border: 3px solid #5203c0;   
-    border-radius: 50%;
-    right: 1vw;
+    border-radius: 2vw 0 0 2vw;
+    width: 30vw;
+    height: 4vw;
+    right: 0px;
     bottom: 1vw;
-    min-width: 65px;
-    min-height: 65px;
+    min-width: 30px;
+    min-height: 30px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
 
 .right-bar > img {
-    width: 40%;
-    height: 40% ;
+    width: 20%;
+    height: 50% ;
 }
 
-#city {
-    transform: translateY(-220%);
+#search-name {
+    transform: translate(26vw,-220%);
+    transition: 0.5s ease;
 }
 
-#city > input {
-    width: 90%;
-    height: 30px;
-    display:  none;
+#search-name > input{
     transition: 0.5s ease;
 }
 
 #sort{
-    transform: translateY(-110%);
+    transform: translate(26vw,-110%);
+    transition: 0.5s ease;
 }
 
+#category{
+    transform: translateX(26vw);
+    transition: 0.5s ease;
+}
+#search-name > input,
+#sort > select,
+#sort option,
+#category > select,
+#category option{
+    width: 100%;
+    height: 30px;
+    font-family: 'Lato', sans-serif;
+    margin-right: 10%;
+}
 
 
 
